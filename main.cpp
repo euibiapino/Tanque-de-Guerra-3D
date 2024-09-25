@@ -6,7 +6,6 @@
 
 enum ModoVisao { Tpessoa, Ppessoa };
 ModoVisao modoVisao = Tpessoa;
-
 float cameraDirecao = 1.5;
 
 float cameraOffsetX = 0;
