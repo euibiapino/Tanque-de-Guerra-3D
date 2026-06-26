@@ -2,10 +2,12 @@
 #include "camera.h"
 #include <GL/glut.h>
 
-bool Input::teclaW = false;
-bool Input::teclaA = false;
-bool Input::teclaS = false;
-bool Input::teclaD = false;
+bool Input::teclaW      = false;
+bool Input::teclaA      = false;
+bool Input::teclaS      = false;
+bool Input::teclaD      = false;
+bool Input::teclaEspaco = false;
+bool Input::teclaR      = false;
 float Input::anguloTorreta = 0.0;
 
 void Input::handleKeyboard(unsigned char tecla, int x, int y) {
@@ -15,6 +17,8 @@ void Input::handleKeyboard(unsigned char tecla, int x, int y) {
         case 'a': case 'A': teclaA = true; break;
         case 'd': case 'D': teclaD = true; break;
         case 'v': case 'V': Camera::toggleViewMode(); break;
+        case ' ': teclaEspaco = true; break;
+        case 'r': case 'R': teclaR = true; break;
     }
     glutPostRedisplay();
 }

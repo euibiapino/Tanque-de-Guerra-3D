@@ -10,6 +10,6 @@ public:
     static float cameraOffsetZ;
     static float cameraAltura;
 
-    static void setupView(float posicaoTanqueX, float posicaoTanqueZ, float posicaoTanqueY, float anguloTorreta);
+    static void setupView(float posicaoTanqueX, float posicaoTanqueZ, float posicaoTanqueY, float anguloTorreta, float anguloTanque);
     static void toggleViewMode();
 };
